@@ -1,0 +1,14 @@
+---
+- name: Configure Controler
+  hosts: all
+  become: true
+  roles:
+      - geerlingguy.ansible
+      - geerlingguy.git
+  tasks:
+  - name: run Shell
+    shell: echo "Ansible Controller"
+
+
+
+
